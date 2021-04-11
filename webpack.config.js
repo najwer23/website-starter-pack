@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   entry: {
     app: [
-      '@babel/polyfill', 
+      '@babel/polyfill',
       './assets/js/index.js'
     ],
     styleMain: [
@@ -17,24 +17,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: 'file-loader',
-          }
-        ]
-      },
-      {
         test: /\.js?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['@babel/preset-env']
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
         }
       },
       {
-        test: /\.css?$/,
-        loader: 'style-loader!css-loader'
+        test: /\.(sass|scss|css)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(svg|eot|woff|woff2|ttf)$/,
+        use: ['file-loader']
       }
     ]
   }
