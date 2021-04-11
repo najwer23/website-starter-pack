@@ -30,7 +30,11 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(svg|eot|woff|woff2|ttf)$/,
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ['file-loader']
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
         use: ['file-loader']
       }
     ]
