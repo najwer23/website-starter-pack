@@ -1,6 +1,13 @@
 # Website Starter Pack - Simply App
 
-A starter pack to build JavaScript applications using standards from ES2015, ES2016 & ES2017. It uses webpack, Babel and webpack-dev-server to compile and serve. It is fully compatible with Async/Await as it uses the Babel polyfill.
+- Webpack 
+    - Babel, 
+    - CSS, 
+    - JS (ES2015, ES2016 & ES2017), Async/Await
+    - FontAwesome 5
+    - Fonts
+    - Webpack serve
+- HTML template
 
 ## Usage
 
