@@ -1,36 +1,36 @@
-# Website Starter Pack - Simply App
+# Website Starter Pack
 
+## Inside
+- Babel, 
+- CSS, 
+- JavaScript
+- FontAwesome 5
+- Font Muli
 - Webpack 
-    - Babel, 
-    - CSS, 
-    - JS (ES2015, ES2016 & ES2017), Async/Await
-    - FontAwesome 5
-    - Fonts
-    - Webpack serve
+    - MiniCssExtractPlugin
+    - HtmlWebpackPlugin
+    - File manager
 - HTML template
 
 ## Usage
-
 ### Installation
-
-Install the dependencies
-
 ```sh
 $ yarn install
 ```
 
-### Serve
-To serve in the browser  - Runs webpack-dev-server
-
+### Dev
 ```sh
 $ yarn start
 ```
 
-### Build
-Compile and build
-
+### Production
 ```sh
 $ yarn build
+```
+
+### Deploy
+```sh
+$ yarn deploy
 ```
 
 ### Author
@@ -38,5 +38,4 @@ Mariusz Najwer
 [https://najwer23.github.io/](https://najwer23.github.io/)
 
 ### License
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
