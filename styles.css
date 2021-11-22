@@ -1,4 +1,115 @@
-@font-face{font-family:'Muli';font-style:extra-light;font-weight:200;src:local("Muli"),local("Muli"),url(4011c44bf2f8c7ea7b0410281f0c2ea4.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:extra-light-italic;font-weight:250;src:local("Muli"),local("Muli"),url(015d832d34d3a4ecd6eae80216f1cb00.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:light;font-weight:300;src:local("Muli"),local("Muli"),url(c1c356e006426f42c29e421d0357383a.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:light-italic;font-weight:350;src:local("Muli"),local("Muli"),url(0f6b0e0278d86e05365956fdaf04ed36.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:regular;font-weight:500;src:local("Muli"),local("Muli"),url(1e6db0b8495f75b8dcc99d690271fd24.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:regular-italic;font-weight:550;src:local("Muli"),local("Muli"),url(f909a15c03ef600eb35f28f6e9523560.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:semi-bold;font-weight:600;src:local("Muli"),local("Muli"),url(eb776453ac0f1d4c2ce040cbd1f4dd4a.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:semi-bold-italic;font-weight:650;src:local("Muli"),local("Muli"),url(636468888370b904be613db17cd68086.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:bold;font-weight:700;src:local("Muli"),local("Muli"),url(41ef56b688667f0b7c794fef1a4c6705.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:bold-italic;font-weight:750;src:local("Muli"),local("Muli"),url(d34c0dc6acda9dc8b9dbaf2aef56ca6a.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:extra-bold;font-weight:800;src:local("Muli"),local("Muli"),url(844c2453373f78dd8230ca34e5b58aeb.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:extra-bold-italic;font-weight:850;src:local("Muli"),local("Muli"),url(10e582fc81c3335045687fb6d34bd645.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:bold-black;font-weight:900;src:local("Muli"),local("Muli"),url(d96af0d10b246e0112b5c84a55fcd72d.ttf) format("truetype")}@font-face{font-family:'Muli';font-style:bold-black-italic;font-weight:950;src:local("Muli"),local("Muli"),url(445b92360963e517039e270f4fab5f1a.ttf) format("truetype")}
+@font-face {
+  font-family: 'Muli';
+  font-style: extra-light;
+  font-weight: 200;
+  src: local('Muli'), local('Muli'), url(8c22f00f4b6874e69167.ttf) format('truetype');
+}
 
-*,*::before,*::after,ul,li,body,a{margin:0;padding:0;box-sizing:border-box;text-decoration:none;list-style-type:none}body{font-family:'Muli', sans-serif;font-weight:normal;font-size:1.2rem}
+@font-face {
+  font-family: 'Muli';
+  font-style: extra-light-italic;
+  font-weight: 250;
+  src: local('Muli'), local('Muli'), url(b4b555d104f70eab0792.ttf) format('truetype');
+}
 
+@font-face {
+  font-family: 'Muli';
+  font-style: light;
+  font-weight: 300;
+  src: local('Muli'), local('Muli'), url(e3133c141858a502b013.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: light-italic;
+  font-weight: 350;
+  src: local('Muli'), local('Muli'), url(367f6793f05930298e6c.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: regular;
+  font-weight: 500;
+  src: local('Muli'), local('Muli'), url(c172b6bcfb8dde931d2c.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: regular-italic;
+  font-weight: 550;
+  src: local('Muli'), local('Muli'), url(d53b9ed8fc83daa520fb.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: semi-bold;
+  font-weight: 600;
+  src: local('Muli'), local('Muli'), url(6c586a6ed9768db3d0c0.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: semi-bold-italic;
+  font-weight: 650;
+  src: local('Muli'), local('Muli'), url(549cb178c7d9bbee340b.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Muli';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Muli'), local('Muli'), url(e5970c97a389533039d0.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: bold-italic;
+  font-weight: 750;
+  src: local('Muli'), local('Muli'), url(565dd60eb2837d322bc4.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: extra-bold;
+  font-weight: 800;
+  src: local('Muli'), local('Muli'), url(79f47cf6b397b894edef.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: extra-bold-italic;
+  font-weight: 850;
+  src: local('Muli'), local('Muli'), url(edcb8e421d27acf27e87.ttf) format('truetype');
+} 
+
+@font-face {
+  font-family: 'Muli';
+  font-style: bold-black;
+  font-weight: 900;
+  src: local('Muli'), local('Muli'), url(387f35bef152b1976601.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: bold-black-italic;
+  font-weight: 950;
+  src: local('Muli'), local('Muli'), url(bbc9073973e8ed27c2ca.ttf) format('truetype');
+}
+*, *::before, *::after, ul, li, body, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}  
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1400px) {
+
+}
