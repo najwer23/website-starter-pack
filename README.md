@@ -9,6 +9,8 @@
 - Webpack 
     - MiniCssExtractPlugin
     - HtmlWebpackPlugin
+    - CssMinimizerPlugin
+    - CleanWebpackPlugin
     - File manager
 - HTML template
 

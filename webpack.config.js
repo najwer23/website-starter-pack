@@ -2,9 +2,11 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 var entryCustom = {};
-let entryArr = ["style", "index"];
+let entryArr = ["index", "loader/style", "loader/file"];
 for (let i = 0; i < entryArr.length; i++) {
   entryCustom[entryArr[i]] = path.resolve(__dirname, './assets/js/' + entryArr[i] + '.js')
 }
@@ -12,32 +14,33 @@ for (let i = 0; i < entryArr.length; i++) {
 module.exports = {
   entry: entryCustom,
   output: {
-    path: path.resolve(__dirname, './build'),
-    filename: '[name].bunde.js'
+    filename: '[name].[fullhash].bunde.js',
+    path: path.resolve(__dirname, './build')
   },
   optimization: {
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: "styles",
-          type: "css/mini-extract",
-          chunks: "all",
-          enforce: true,
-        },
-      },
-    },
     minimizer: [
       '...',
+      new CssMinimizerPlugin(),
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      linkType: "text/css",
-    }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "index.html"),
-      favicon: "./assets/img/f.png",
-    })
+      favicon: "./assets/img/fg.png",
+      minify: {
+        removeAttributeQuotes: true,
+        collapseWhitespace: true,
+        removeComments: true
+      },
+      inject: "body",
+      // scriptLoading: "defer"
+    }),
+    new MiniCssExtractPlugin({
+      linkType: "text/css",
+      filename: "[name].[fullhash].css",
+      chunkFilename: "[id].css"
+    }),
+    new CleanWebpackPlugin(),
   ],
   target: ['web', 'es5'],
   module: {
@@ -63,7 +66,7 @@ module.exports = {
         use: ['file-loader']
       },
       {
-        test: /\.(sass|scss|css)$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
