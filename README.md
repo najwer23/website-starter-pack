@@ -5,7 +5,7 @@
 - CSS, 
 - JavaScript
 - FontAwesome 5
-- Font Muli
+- Font Mulish
 - Webpack 
     - MiniCssExtractPlugin
     - HtmlWebpackPlugin
