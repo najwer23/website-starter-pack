@@ -5,16 +5,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-var entryCustom = {};
-let entryArr = [
+var entryCustom = [
   "loader/style", 
   "index", 
   "loader/media"
-];
-
-for (let i = 0; i < entryArr.length; i++) {
-  entryCustom[entryArr[i]] = path.resolve(__dirname, './src/js/' + entryArr[i] + '.js')
-}
+].reduce((o, key) => ({ ...o, [key]: path.resolve(__dirname, "./src/js/" + key + ".js") }), {})
 
 module.exports = {
   entry: entryCustom,
