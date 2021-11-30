@@ -11,9 +11,12 @@ class Main {
 
 //The load event fires when a given resource has loaded.
 window.onload = () => {
-    console.log("All resource has loaded")
-    let main = new Main({name: "Mariusz Najwer"})
-    main.sayHello()
+    document.querySelector("#container").style["display"] = "block";
+    document.querySelector("#loader-box").style["display"] = "none";
+
+    // console.log("All resource has loaded")
+    // let main = new Main({name: "Mariusz Najwer"})
+    // main.sayHello()
 }
 
 //The DOMContentLoaded event fires when the initial 
